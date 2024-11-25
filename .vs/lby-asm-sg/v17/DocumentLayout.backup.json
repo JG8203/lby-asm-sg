@@ -29,9 +29,9 @@
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\Joshua Armaine Gilo\\source\\repos\\lby-asm-sg\\main.c",
               "RelativeDocumentMoniker": "main.c",
-              "ToolTip": "C:\\Users\\Joshua Armaine Gilo\\source\\repos\\lby-asm-sg\\main.c",
-              "RelativeToolTip": "main.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Joshua Armaine Gilo\\source\\repos\\lby-asm-sg\\main.c*",
+              "RelativeToolTip": "main.c*",
+              "ViewState": "AgIAAAkAAACAlZmZmRkWwCUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-11-22T23:05:48.455Z",
               "IsPinned": true,
@@ -47,8 +47,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Microsoft\\VC\\v170\\Microsoft.CppCommon.targets",
               "ViewState": "AgIAAOgAAAAAAAAAAAAjwP0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-11-22T23:13:55.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T23:13:55.696Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "asmfunc.asm",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-22T23:11:54.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T23:11:54.076Z"
             }
           ]
         }
