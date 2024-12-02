@@ -1,2 +1,3 @@
 ﻿  main.c
-  lby-asm-sg.vcxproj -> C:\Users\Joshua Armaine Gilo\source\repos\lby-asm-sg\x64\Debug\lby-asm-sg.exe
+C:\Users\Samantha Jade\Documents\GitHub\lby-asm-sg\main.c(37,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  lby-asm-sg.vcxproj -> C:\Users\Samantha Jade\Documents\GitHub\lby-asm-sg\x64\Debug\lby-asm-sg.exe

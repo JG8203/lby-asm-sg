@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Joshua Armaine Gilo\\source\\repos\\lby-asm-sg\\",
+  "WorkspaceRootPath": "C:\\Users\\Samantha Jade\\Documents\\GitHub\\lby-asm-sg\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{140DE2A9-3407-41FC-AACF-95FD6D6FE686}|lby-asm-sg.vcxproj|C:\\Users\\Joshua Armaine Gilo\\source\\repos\\lby-asm-sg\\asmfunc.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{140DE2A9-3407-41FC-AACF-95FD6D6FE686}|lby-asm-sg.vcxproj|solutionrelative:asmfunc.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{140DE2A9-3407-41FC-AACF-95FD6D6FE686}|lby-asm-sg.vcxproj|C:\\Users\\Samantha Jade\\Documents\\GitHub\\lby-asm-sg\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{140DE2A9-3407-41FC-AACF-95FD6D6FE686}|lby-asm-sg.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{140DE2A9-3407-41FC-AACF-95FD6D6FE686}|lby-asm-sg.vcxproj|C:\\Users\\Joshua Armaine Gilo\\source\\repos\\lby-asm-sg\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{140DE2A9-3407-41FC-AACF-95FD6D6FE686}|lby-asm-sg.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{140DE2A9-3407-41FC-AACF-95FD6D6FE686}|lby-asm-sg.vcxproj|C:\\Users\\Samantha Jade\\Documents\\GitHub\\lby-asm-sg\\asmfunc.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{140DE2A9-3407-41FC-AACF-95FD6D6FE686}|lby-asm-sg.vcxproj|solutionrelative:asmfunc.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Microsoft\\VC\\v170\\Microsoft.CppCommon.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -21,21 +21,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "main.c",
-              "DocumentMoniker": "C:\\Users\\Joshua Armaine Gilo\\source\\repos\\lby-asm-sg\\main.c",
+              "DocumentMoniker": "C:\\Users\\Samantha Jade\\Documents\\GitHub\\lby-asm-sg\\main.c",
               "RelativeDocumentMoniker": "main.c",
-              "ToolTip": "C:\\Users\\Joshua Armaine Gilo\\source\\repos\\lby-asm-sg\\main.c",
+              "ToolTip": "C:\\Users\\Samantha Jade\\Documents\\GitHub\\lby-asm-sg\\main.c",
               "RelativeToolTip": "main.c",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-11-22T23:05:48.455Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -51,13 +55,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "asmfunc.asm",
-              "DocumentMoniker": "C:\\Users\\Joshua Armaine Gilo\\source\\repos\\lby-asm-sg\\asmfunc.asm",
+              "DocumentMoniker": "C:\\Users\\Samantha Jade\\Documents\\GitHub\\lby-asm-sg\\asmfunc.asm",
               "RelativeDocumentMoniker": "asmfunc.asm",
-              "ToolTip": "C:\\Users\\Joshua Armaine Gilo\\source\\repos\\lby-asm-sg\\asmfunc.asm",
+              "ToolTip": "C:\\Users\\Samantha Jade\\Documents\\GitHub\\lby-asm-sg\\asmfunc.asm",
               "RelativeToolTip": "asmfunc.asm",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-11-22T23:11:54.076Z",
               "EditorCaption": ""

@@ -1,29 +1,78 @@
 section .data
-    width_val dq 0
-    height_val dq 0
-    pixels_ptr dq 0
-    converted_ptr dq 0
+    align 16
+    float255 dd 255.0, 255.0, 255.0, 255.0    ; Constant for division
 
 section .text
 bits 64
 default rel
 global imgCvtGrayIntToDouble
 
+; Function parameters (Windows x64 calling convention):
+; rcx = height
+; rdx = width
+; r8 = source array pointer (int*)
+; r9 = destination array pointer (float*)
 imgCvtGrayIntToDouble:
-
-    ;; In asm, parameters are passed as the ff:
-    ;; func(rcx, rdx, r8, r9, [stack])
-    ;; where the first parameter is passed onto rcx, the second onto rdx,
-    ;; the third onto r8, and the fourth onto r9.
-    ;; Any additional parameters (5th, 6th, etc.) are passed on the stack.
-
-    ;; Demo code for moving around the params
-    mov [width_val], rcx ;; stores first parameter into width_val
-    mov [height_val], rdx ;; stores second parameter into height_val
-    mov al, byte [r8] ;; stores character in source array (index 0) to al
-    mov [r9], al ;; stores character in al to index 0 of dest array
+    ; Preserve registers
+    push rbp
+    mov rbp, rsp
+    push rbx
+    push r12
+    push r13
+    push r14
+    
+    ; Store parameters in preserved registers
+    mov r12, rcx        ; height
+    mov r13, rdx        ; width
+    mov r14, r8         ; source pointer
+    mov rbx, r9         ; destination pointer
+    
+    ; Calculate total elements (height * width)
+    mov rax, r12
+    mul r13
+    mov r12, rax        ; Store total count in r12
+    
+    ; Load 255.0 into xmm4 for division
+    movaps xmm4, [float255]
+    
+    ; Initialize counter
+    xor rcx, rcx        ; rcx = 0
+    
+.loop:
+    ; Check if we have at least 4 elements remaining
+    mov rax, r12
+    sub rax, rcx
+    cmp rax, 4
+    jl .remainder
+    
+    ; Process 4 integers at a time using SIMD
+    movdqu xmm0, [r14 + rcx*4]    ; Load 4 ints
+    cvtdq2ps xmm0, xmm0           ; Convert to floats
+    divps xmm0, xmm4              ; Divide by 255.0
+    movups [rbx + rcx*4], xmm0    ; Store result
+    
+    ; Increment counter by 4
+    add rcx, 4
+    jmp .loop
+    
+.remainder:
+    ; Handle remaining elements
+    cmp rcx, r12
+    jge .done
+    
+    ; Process one element at a time
+    cvtsi2ss xmm0, dword [r14 + rcx*4]  ; Convert int to float
+    divss xmm0, dword [float255]        ; Divide by 255.0
+    movss [rbx + rcx*4], xmm0           ; Store result
+    
+    inc rcx
+    jmp .remainder
+    
+.done:
+    ; Restore registers
+    pop r14
+    pop r13
+    pop r12
+    pop rbx
+    pop rbp
     ret
-
-    ;; TODO:
-    ;; Use XMM to store floating point values and store into r9
-    ;; Use SIMD instructions to do the conversion from source to dest array

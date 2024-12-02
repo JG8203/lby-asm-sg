@@ -2,10 +2,9 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <string.h>
-
 #define BUFFER_SIZE 256
 
-extern void asmhello();
+extern void imgCvtGrayIntToDouble();
 
 // Pure C implementation nung kailangang gawin
 // function below uses row-major order to represent the pixels
@@ -14,28 +13,21 @@ extern void asmhello();
 2, 3
 1, 2, 3
 4, 5, 6
-
 array would be represented internally in memory as: 1,2,3,4,5,6
 */
-void imgCvtGrayIntToDouble(int width, int height, int* pixels, float* converted) {
-    for (int i = 0; i < width * height; i++) {
-        converted[i] = pixels[i] / 255.0f;
-    }
-}
 
 int main(int argc, char* argv[]) {
     int width, height;
-    
-    // Get input
-    if (scanf_s("%d, %d", &width, &height) != 2) {
-        fprintf(stderr, "Invalid input. Please provide dimensions in the format 'width, height'.\n");
+
+    // Get input - now reading height first, then width
+    if (scanf_s("%d, %d", &height, &width) != 2) {
+        fprintf(stderr, "Invalid input. Please provide dimensions in the format 'height, width'.\n");
         return 1;
     }
 
     // Allocate memory for data and res
     int* pixelArray = (int*)calloc(width * height, sizeof(int));
     float* convertedArray = (float*)calloc(width * height, sizeof(float));
-
     if (!pixelArray || !convertedArray) {
         fprintf(stderr, "Memory allocation failed.\n");
         return 1;
@@ -56,14 +48,12 @@ int main(int argc, char* argv[]) {
 
         token = strtok_s(inputRow, ", ", &context);
         while (token != NULL) {
-            printf("Token: %s\n", token);
             pixelArray[i] = atoi(token);
             token = strtok_s(NULL, ", ", &context);
         }
     }
 
-    // int to float
-    imgCvtGrayIntToDouble(width, height, pixelArray, convertedArray);
+    imgCvtGrayIntToDouble(height, width, pixelArray, convertedArray);
 
     for (int i = 0; i < width * height; i++) {
         printf("%.2f ", convertedArray[i]);
@@ -74,6 +64,5 @@ int main(int argc, char* argv[]) {
 
     free(pixelArray);
     free(convertedArray);
-
     return 0;
 }
