@@ -1,3 +1,7 @@
+# Members
+1. Cabreros, Samantha Jade
+2. Gilo, Joshua Armaine
+
 # Grayscale Image Processing with x86-64 Assembly
 
 This project implements grayscale image format conversion between uint8 and double precision floating point representations using C and x86-64 assembly with SIMD instructions.
