@@ -2,6 +2,17 @@
 
 This project implements grayscale image format conversion between uint8 and double precision floating point representations using C and x86-64 assembly with SIMD instructions.
 
+### Click the image below to watch the video.
+[![WATCH OUR WALKTHROUGH HERE](https://img.youtube.com/vi/5TLfXpp9gCY/maxresdefault.jpg)](https://youtu.be/5TLfXpp9gCY)
+
+# Performance Analysis
+![image](https://github.com/user-attachments/assets/d261abff-1735-473a-9852-d9af56127bb7)
+
+The comparison between the C and Assembly implementation of the program shows a very significant advantage for the Assembly-based implementation accross every image dimension. The Assembly implementation outperorms its C counterpart with an average speedup factor of 12x, reaching a peak peformance of 39x at 640x640 pixels. It could also be noticed that the runtime of the C code grows a lot faster than the assembly code which maintains its sub-ms execution time, even for large images (0.533ms for 880x880x) whereas the C implementation reaches 3.3ms for the largest image.
+
+# Correctness Verification
+![{1337154F-FD59-4353-96D9-91D754BF889E}](https://github.com/user-attachments/assets/99d38cd2-b9b5-43da-a625-9f4d40f5eca3)
+
 ## Overview
 
 ### Grayscale Image Representation
