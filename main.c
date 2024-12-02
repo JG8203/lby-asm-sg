@@ -20,8 +20,8 @@ int main(int argc, char* argv[]) {
     int width, height;
 
     // Get input - now reading height first, then width
-    if (scanf_s("%d, %d", &height, &width) != 2) {
-        fprintf(stderr, "Invalid input. Please provide dimensions in the format 'height, width'.\n");
+    if (scanf_s("%d %d", &height, &width) != 2) {
+        fprintf(stderr, "Invalid input. Please provide dimensions in the format 'height width'.\n");
         return 1;
     }
 

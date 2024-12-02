@@ -1,3 +1,2 @@
-﻿  test.c
-C:\Users\Joshua Armaine Gilo\source\repos\lby-asm-sg\test.c(41,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+﻿  Performing Custom Build Tools
   lby-asm-sg.vcxproj -> C:\Users\Joshua Armaine Gilo\source\repos\lby-asm-sg\x64\Debug\lby-asm-sg.exe
