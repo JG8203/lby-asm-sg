@@ -1,6 +1,8 @@
 # Grayscale Image Processing with x86-64 Assembly
 
 This project implements grayscale image format conversion between uint8 and double precision floating point representations using C and x86-64 assembly with SIMD instructions.
+
+### Click the image below to watch the video.
 [![WATCH OUR WALKTHROUGH HERE](https://img.youtube.com/vi/5TLfXpp9gCY/maxresdefault.jpg)](https://youtu.be/T-5TLfXpp9gCY)
 
 # Performance Analysis
