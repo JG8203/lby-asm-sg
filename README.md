@@ -3,7 +3,7 @@
 This project implements grayscale image format conversion between uint8 and double precision floating point representations using C and x86-64 assembly with SIMD instructions.
 
 ### Click the image below to watch the video.
-[![WATCH OUR WALKTHROUGH HERE](https://img.youtube.com/vi/5TLfXpp9gCY/maxresdefault.jpg)](https://youtu.be/T-5TLfXpp9gCY)
+[![WATCH OUR WALKTHROUGH HERE](https://img.youtube.com/vi/5TLfXpp9gCY/maxresdefault.jpg)](https://youtu.be/5TLfXpp9gCY)
 
 # Performance Analysis
 ![image](https://github.com/user-attachments/assets/d261abff-1735-473a-9852-d9af56127bb7)
